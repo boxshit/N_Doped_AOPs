@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+  margin-top: 150px;
+}
+
+.background {
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 50px;
+    left: 0;
+    height: 90vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.white {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    top: 50px;
+    left: 0;
+    height: 90vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.title {
+    width: 1200px;
+    height: 60px;
+    font-family: 'Times New Roman';
+    text-align: center;
+    background-color: rgb(193, 224, 178, 0.8);
+    font-size: 28px;
+    color: black;
+    margin: 60px auto;
+}
+
+.inputs {
+    width: 1200px;
+    font-family: 'Times New Roman';
+    background-color: rgba(209, 230, 210, 0.8);
+    margin: 30px auto;
+}
+
+.if, .ot {
+    font-family: 'Times New Roman';
+    font-size: 28px;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Preparation, .Composition, .prediction {
+    width: 1200px;
+    /* 居中显示 */
+    text-align: left;
+    font-family: 'Times New Roman';
+    margin-top: 10px auto;
+    margin-left: 3px;
+    font-size: 24px;
+}
+
+input {
+    height: 40px;
+    width: 280px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.click {
+    width: 150px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(13, 77, 13);
+    font-family: 'Times New Roman';
+    font-size: 24px;
+}
+
+.Main {
+    text-align: center;
+    width: 300px;
+    background-color: rgba(193, 224, 178, 0.8);
+    display: inline-block;
+    margin-left: 450px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.Main input {
+    width: 200px;
+}

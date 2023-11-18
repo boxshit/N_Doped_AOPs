@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>The main active factors prediction </title>
+    <link rel="stylesheet" href="../static/web.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h3>Prediction of main active factors in AOPs actived by N-doped biochar</h3>
+        </div>
+    </div>
+    <form action="" method="POST">
+        <!-- input part -->
+        <section class="inputs">
+            <div class="if">Input features</div>
+            <div>
+                <div class="Preparation">Preparation parameters </div>
+                    <div><input type="text" name="temperature" placeholder="Pyrolysis temperature (°C)" required="required">
+                    <input type="text" name="N percursor" placeholder="N percursor?" list="YNlist" required="required">
+                            <datalist id="YNlist">
+                                <option>Yes</option>
+                                <option>No</option>
+                            </datalist>
+                    <input type="text" name="Other non-metallic elements" placeholder="Other non-metallic elements?" list="YNlist" required="required">
+                            <datalist id="METlist">
+                                <option>No</option>
+                                <option>Single</option>
+                                <option>Bimetallic</option>
+                            </datalist>
+                    <input type="text" name="metallic elements" placeholder="metallic elements?" list="METlist" required="required"></div>
+                <br>
+                <div class="Composition">Composition features</div>
+                    <div><input type="text" name="C/O" placeholder="Carbon (%)/Oxygen (%)" required="required">
+                    <input type="text" name="pdN/pdNc" placeholder="Pyridine N(%)/Pyridine N variation(%)" required="required">
+                    <input type="text" name="gN/gNc" placeholder="Graphite N(%)/Graphite N variation(%) " required="required"><div>
+
+            </div>
+        </section>
+
+        <section class="inputs">
+            <div class="ot">Output targets
+                <input class="click" type="submit" value="Prediction">
+            </div>
+            <div class="outvalue">
+                <!-- Main contribution (%) -->
+                <div class="Main">Main contribution  <br><input type="text" placeholder="Radical/Non-radical" value={{ pred_value }} ></div>
+
+            </div>
+        </section>
+    <div class="background">
+    </div>
+    <div class="white">
+    </div>
+</body>
+</html>
